@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="Day01FNLab01"/>
 <aop-project name="Day01FN"/>
+<aop-project name="Day01FNLab02"/>
+<aop-project name="Day01FNSQL"/>
 </aop-reference-model>
