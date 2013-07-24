@@ -1,0 +1,54 @@
+package com.aci;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+
+public class PersonDao {
+	private JdbcTemplate jdbcTemplate;
+
+	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
+		this.jdbcTemplate = jdbcTemplate;
+	}
+	
+	public void insert(String name, int age) {
+		String query = "insert into persons(name,age) value(?,?)";
+		jdbcTemplate.update(query, name, age);
+	}
+	
+	public int getAge(int id){
+		String query = "select age from persons where id=?";
+		return jdbcTemplate.queryForObject(query, Integer.class, id);
+	}
+	
+	public List<String> getAllNames(){
+		String query = "select name from persons";
+		return jdbcTemplate.queryForList(query, String.class);
+	}
+	
+	public void updateAge(int id, int newAge){
+		String query = "update persons set age=? where id=?";
+		jdbcTemplate.update(query, newAge, id);
+	}
+	
+	public List<Person> getAllPersons() {
+		String query = "select * from persons";
+		return jdbcTemplate.query(query, new RowMapper<Person>() {
+
+			@Override
+			public Person mapRow(ResultSet arg0, int arg1) throws SQLException {
+				return new Person(arg0.getString("name"), arg0.getInt("age"), arg0.getInt("id"));
+			}
+			
+		});
+	}
+	
+	public void resetDatabase() {
+		String clear_db = "delete from persons;";
+		String reset_inc = "alter table persons AUTO_INCREMENT=1;";
+		jdbcTemplate.execute(query);
+	}
+}
