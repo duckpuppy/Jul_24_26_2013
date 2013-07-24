@@ -12,6 +12,11 @@ public class PersonDao {
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
 	}
+	public void updateName(int id,String name){
+		//ERROR IN THE FOLLOWING CODE
+		jdbcTemplate.update("update set age=? where id=?",name,id);		
+	}
+
 	public void updateAge(int id,int newAge){
 		jdbcTemplate.update("update persons set age=? where id=?",newAge,id);		
 	}
