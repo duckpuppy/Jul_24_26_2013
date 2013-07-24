@@ -2,7 +2,6 @@ package com.aci.lab02;
 
 import org.springframework.stereotype.Repository;
 
-
 @Repository("accountdao")
 public class AccountDaoImpl extends BaseDaoSupport implements AccountDao{
 	

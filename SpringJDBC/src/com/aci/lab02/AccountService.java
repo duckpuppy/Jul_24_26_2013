@@ -15,7 +15,6 @@ public class AccountService {
 		this.accountDao = accountDao;
 	}
 	@Autowired
-	@Qualifier("statementdao")
 	public void setStatementDao(StatementDao statementDao) {
 		this.statementDao = statementDao;
 	}
