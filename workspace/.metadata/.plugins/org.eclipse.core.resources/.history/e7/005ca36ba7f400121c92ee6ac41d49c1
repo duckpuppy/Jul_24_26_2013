@@ -20,7 +20,7 @@ public class AccountService {
 		accountDao.withdraw(accountNumber, amount);
 		statementDao.addStatement(accountNumber, type, -amount);
 	}
-
+	
 	public int getBalance(int accountNumber) {
 		return accountDao.getBalance(accountNumber);
 	}
