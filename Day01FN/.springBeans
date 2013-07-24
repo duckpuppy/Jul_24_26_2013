@@ -9,6 +9,7 @@
 	<configs>
 		<config>src/com/aci/beans.xml</config>
 		<config>src/com/lab01/beans.xml</config>
+		<config>src/com/aci/annotations/beans.xml</config>
 	</configs>
 	<configSets>
 	</configSets>
