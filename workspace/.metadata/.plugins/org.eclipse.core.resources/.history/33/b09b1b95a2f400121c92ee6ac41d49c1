@@ -1,0 +1,14 @@
+package com.aci;
+
+public class AccountService {
+	private AccountDao accountDao;
+	private StatementDao statementDao;
+	
+	public void deposit(int accountNumber, String type, int amount) {
+		
+	}
+	
+	public void withdraw(int accountNumber, String type, int amount) {
+		
+	}
+}

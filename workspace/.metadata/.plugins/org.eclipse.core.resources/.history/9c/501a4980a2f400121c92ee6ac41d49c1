@@ -1,0 +1,11 @@
+package com.aci;
+
+public class StatementDaoImpl extends BaseDaoSupport implements StatementDao {
+
+	@Override
+	public void addStatement(int accountNumber, String type, int amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

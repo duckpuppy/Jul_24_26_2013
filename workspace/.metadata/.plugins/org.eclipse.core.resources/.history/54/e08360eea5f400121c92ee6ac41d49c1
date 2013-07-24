@@ -1,0 +1,25 @@
+package com.aci;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
+public class AccountClient {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		ApplicationContext context = new FileSystemXmlApplicationContext("bin/com/aci/beans.xml");
+		AccountService service = context.getBean("accountService", AccountService.class);
+
+		System.out.println("Starting Balance: " + service.getBalance(1));
+
+		service.deposit(1, "deposit", 1500);
+		System.out.println("After $1500 deposit: " + service.getBalance(1));
+		service.withdraw(1, "withdraw", 1100);
+		System.out.println("After $1100 withdrawal: " + service.getBalance(1));
+		
+		System.out.println("Balance: " + service.getBalance(1));
+	}
+
+}

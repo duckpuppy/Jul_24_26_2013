@@ -1,0 +1,17 @@
+package com.aci;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class AccountService {
+	private AccountDao accountDao;
+	private StatementDao statementDao;
+	
+	public void deposit(int accountNumber, String type, int amount) {
+		
+	}
+	
+	public void withdraw(int accountNumber, String type, int amount) {
+		
+	}
+}

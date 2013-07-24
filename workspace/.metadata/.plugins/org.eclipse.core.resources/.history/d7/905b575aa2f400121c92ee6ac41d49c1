@@ -1,0 +1,8 @@
+package com.aci;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+public abstract class BaseDaoSupport {
+	@Autowired
+	private JdbcTemplate jdbcTemplate;
+}

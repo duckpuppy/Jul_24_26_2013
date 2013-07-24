@@ -1,0 +1,21 @@
+package com.aci;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class AccountDaoImpl extends BaseDaoSupport implements AccountDao {
+	private static final String balanceQuery = "select balance from accounts where account_number is ?";
+	@Override
+	public void deposit(int accountNumber, int amount) {
+		String balance_query = ""
+		int balance = getJdbcTemplate().queryForObject(sql, requiredType)
+		String query = "";
+	}
+
+	@Override
+	public void withdraw(int accountNumber, int amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
