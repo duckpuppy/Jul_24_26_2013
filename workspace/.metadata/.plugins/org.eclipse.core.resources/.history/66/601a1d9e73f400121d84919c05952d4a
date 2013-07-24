@@ -1,0 +1,10 @@
+import java.util.Map;
+
+
+public class SessionPlanner {
+	Map<String,String> sessionMap;
+	
+	public Map<String, String> getSessionMap() {
+		return sessionMap;
+	}
+}

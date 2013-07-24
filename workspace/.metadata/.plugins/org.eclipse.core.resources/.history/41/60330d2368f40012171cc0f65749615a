@@ -1,0 +1,13 @@
+package com.aci;
+
+public class SoundAlarm implements Alarm {
+	@Override
+	public void activate() {
+		System.out.println("*** SoundAlarm activated");
+	}
+	
+	@Override
+	public void desctivate() {
+		System.out.println("*** SoundAlarm deactivated");
+	}
+}

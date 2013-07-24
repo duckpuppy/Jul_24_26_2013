@@ -1,0 +1,20 @@
+package com.aci;
+import java.util.List;
+import java.util.Map;
+
+
+public class SessionPlanner {
+	Map sessionMap;
+
+	public Map getSessionMap() {
+		return sessionMap;
+	}
+
+	public void setSessionMap(Map sessionMap) {
+		this.sessionMap = sessionMap;
+	}
+	
+	public List<String> getTopics(String duration) {
+		return null;
+	}
+}

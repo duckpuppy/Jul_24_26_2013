@@ -1,0 +1,14 @@
+package com.aci;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
+public class DoorUser {
+	public static void main(String[] args) {
+		Door door = new FileSystemXmlApplicationContext("bin/com/aci/beans.xml").getBean("door", Door.class);
+		
+		door.open();
+		// ...
+		door.close();
+	}
+}

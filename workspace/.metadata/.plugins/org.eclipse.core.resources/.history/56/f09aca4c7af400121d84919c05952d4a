@@ -1,0 +1,30 @@
+package com.aci;
+import java.util.List;
+import java.util.Properties;
+
+
+public class SessionPlanner {
+	Properties sessionMap;
+
+	public Properties getSessionMap() {
+		return sessionMap;
+	}
+
+	public void setSessionMap(Properties sessionMap) {
+		this.sessionMap = sessionMap;
+	}
+	
+	public List<String> getTopics(String duration) {
+		return null;
+	}
+	
+	public int get45MinuteTopicCount() {
+		
+	}
+	public int get50MinuteTopicCount() {
+		
+	}
+	public int get60MinuteTopicCount() {
+		
+	}
+}

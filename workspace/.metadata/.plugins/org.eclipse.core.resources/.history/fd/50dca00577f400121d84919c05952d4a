@@ -1,0 +1,13 @@
+package com.aci;
+
+public class Conference {
+	private SessionPlanner planner;
+
+	public SessionPlanner getPlanner() {
+		return planner;
+	}
+
+	public void setPlanner(SessionPlanner planner) {
+		this.planner = planner;
+	}
+}

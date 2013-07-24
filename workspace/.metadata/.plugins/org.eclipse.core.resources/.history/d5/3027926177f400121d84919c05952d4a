@@ -1,0 +1,17 @@
+package com.aci;
+
+public class User {
+	private Conference conference;
+
+	public Conference getConference() {
+		return conference;
+	}
+
+	public void setConference(Conference conference) {
+		this.conference = conference;
+	}
+	
+	public void printSessions() {
+		
+	}
+}

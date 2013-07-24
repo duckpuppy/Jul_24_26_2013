@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+C:\cygwin\home\paikens\src\spring-training\workspace\.metadata\.plugins\org.eclipse.jdt.core
+37799385.index
+2594838506.index

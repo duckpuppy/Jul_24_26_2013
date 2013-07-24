@@ -1,0 +1,21 @@
+package com.aci;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+public class SessionPlanner {
+	Map<String,String> sessionMap;
+
+	public Map<String,String> getSessionMap() {
+		return sessionMap;
+	}
+
+	public void setSessionMap(Map<String,String> flatMap) {
+		Iterator<String> values = flatMap.values().iterator();
+		this.sessionMap = sessionMap;
+	}
+	
+	public List<String> getTopics(String duration) {
+		return null;
+	}
+}
