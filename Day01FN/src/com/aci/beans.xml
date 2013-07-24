@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+	
+	<bean id="account" class="com.aci.Account" scope="prototype"></bean>
+	<!-- Constructor-based DI -->
+	<bean id="door2" class="com.aci.Door">
+		<constructor-arg ref="soundAlarm"></constructor-arg>
+		<constructor-arg value="Rubberwood"></constructor-arg>
+	</bean>
+
+	<!-- Setter-based DI -->
+	<bean id="door" class="com.aci.Door">
+		<property name="alarm" ref="soundAlarm"></property>
+	</bean>
+	
+	<bean id="soundAlarm" class="com.aci.SoundAlarm"/>
+</beans>
