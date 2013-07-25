@@ -27,6 +27,12 @@ public class AccountService {
 	public void setStatementDao(StatementDao statementDao) {
 		this.statementDao = statementDao;
 	}
+	
+	public void depositXML(int accountNumber,String type, int amount) {
+		accountDao.deposit(accountNumber, amount);
+		statementDao.addStatement(accountNumber, type, amount);
+	}
+	
 	@Transactional
 	public void deposit(int accountNumber,String type, int amount) {
 		accountDao.deposit(accountNumber, amount);
