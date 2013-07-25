@@ -1,6 +1,8 @@
 package com.aci;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 @Repository
 public class AccountDaoImpl extends BaseDaoSupport implements AccountDao {
@@ -21,6 +23,7 @@ public class AccountDaoImpl extends BaseDaoSupport implements AccountDao {
 		return getJdbcTemplate().queryForObject(balanceQuery, Integer.class, accountNumber);
 	}
 
+	@Transactional(propagation=Propagation.MANDATORY)
 	private void updateBalance(int accountNumber, int amount) {
 		String query = "update accounts set balance=? where account_number=?";
 		getJdbcTemplate().update(query, amount, accountNumber);

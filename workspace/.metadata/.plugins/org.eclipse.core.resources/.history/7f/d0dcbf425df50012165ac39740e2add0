@@ -1,0 +1,11 @@
+package com.aci;
+
+import org.springframework.transaction.annotation.Transactional;
+
+public interface AccountDao {
+	@Transactional
+	void deposit(int accountNumber, int amount);
+	@Transactional
+	void withdraw(int accountNumber, int amount);
+	int getBalance(int accountNumber);
+}
