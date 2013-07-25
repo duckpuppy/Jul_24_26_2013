@@ -9,7 +9,12 @@ public class EmployeeUser {
 		Employee emp = (Employee)context.getBean("employee");
 		emp.setRole("User");
 		emp.enterServerRoom();
-		emp.violateRules();
+		try{
+			emp.violateRules();
+		}
+		catch(Exception ex){
+			System.out.println("Catch block: " + ex.getMessage());
+		}
 //		emp.work();
 //		emp.checkMail();
 		//Security security = (Security)context.getBean("security");
