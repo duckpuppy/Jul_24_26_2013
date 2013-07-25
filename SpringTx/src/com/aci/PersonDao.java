@@ -3,6 +3,7 @@ package com.aci;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -10,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 //@Transactional(propagation=Propagation.NOT_SUPPORTED)
 public class PersonDao {
 	private JdbcTemplate jdbcTemplate;
-	
+		
 	@Transactional(propagation=Propagation.REQUIRED,rollbackFor=MyException.class)
 	public void addTwoDogs(String name1,
 			String name2)throws Exception{
