@@ -1,0 +1,8 @@
+package com.aci;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Security {
+
+}

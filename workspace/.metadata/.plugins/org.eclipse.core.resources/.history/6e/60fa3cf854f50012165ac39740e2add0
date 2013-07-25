@@ -1,0 +1,21 @@
+package com.aci;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
+public class PersonWorker {
+	public static void main(String[] args) {
+		ApplicationContext context = new FileSystemXmlApplicationContext(
+				"bin/com/aci/beans.xml");
+
+		PersonDao persondao = context.getBean("personDao", PersonDao.class);
+		persondao
+				.addTwoPersons(
+						"Patrick",
+						39,
+						"Reneeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+						39);
+
+		((FileSystemXmlApplicationContext) context).close();
+	}
+}

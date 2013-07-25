@@ -3,5 +3,6 @@
 <aop-project name="Day01FNLab01"/>
 <aop-project name="Day01FN"/>
 <aop-project name="Day01FNLab02"/>
+<aop-project name="Day02FNSpringAOP"/>
 <aop-project name="Day01FNSQL"/>
 </aop-reference-model>

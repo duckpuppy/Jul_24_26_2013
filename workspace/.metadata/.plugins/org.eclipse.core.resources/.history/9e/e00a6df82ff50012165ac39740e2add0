@@ -1,0 +1,20 @@
+package com.aci;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Employee {
+
+	public void beginWork() {
+		System.out.println("***Arriving at work");
+	}
+
+	public void work() {
+		System.out.println("***Coding");
+	}
+
+	public void checkMail() {
+		System.out.println("***Playing with Gmail");
+	}
+
+}
