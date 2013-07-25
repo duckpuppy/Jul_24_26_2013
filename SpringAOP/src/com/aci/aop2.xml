@@ -7,7 +7,19 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
+	<aop:config>
+		<aop:pointcut expression="execution(* com.aci.Employee.*(..))" id="log"/>
+		<aop:aspect ref="employeeAspect2">
+			<aop:before method="printInfo" pointcut-ref="log"/>
+			<aop:after method="printInfoAfter" pointcut-ref="log"/>
+			<aop:around method="check" pointcut="execution(* com.aci.Employee.enterServerRoom())"/>
+			<aop:after-throwing method="handleExceptions" throwing="throwable" pointcut-ref="log"/>
+		</aop:aspect>
+	</aop:config>
+	
 	<context:component-scan base-package="com.aci"></context:component-scan>
-	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+	<bean id="employeeAspect2" class="com.aci.EmployeeAspect2"></bean>
+	
+	
 
 </beans>
