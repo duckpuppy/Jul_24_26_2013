@@ -1,8 +1,10 @@
 #Tomcat publish data
-#Fri Jul 26 15:06:56 EDT 2013
+#Fri Jul 26 16:16:59 EDT 2013
 org.eclipse.jst.jee.server\:/binary\:C\:\\cygwin\\home\\paikens\\src\\spring-training\\workspace\\Day02FNWeb\\WebContent\\WEB-INF\\lib\\spring-web-3.2.2.RELEASE.jar=C\:\\springsource\\vfabric-tc-server-developer-2.8.2.RELEASE\\base-instance\\wtpwebapps\\Day02FNWeb\\WEB-INF\\lib\\spring-web-3.2.2.RELEASE.jar
+org.eclipse.jst.jee.server\:SecurityApp=C\:\\springsource\\vfabric-tc-server-developer-2.8.2.RELEASE\\base-instance\\wtpwebapps\\SecurityApp
 org.eclipse.jst.jee.server\:/binary\:C\:\\cygwin\\home\\paikens\\src\\spring-training\\workspace\\Day03FNLab05\\WebContent\\WEB-INF\\lib\\spring-web-3.2.2.RELEASE.jar=C\:\\springsource\\vfabric-tc-server-developer-2.8.2.RELEASE\\base-instance\\wtpwebapps\\Day03FNLab05\\WEB-INF\\lib\\spring-web-3.2.2.RELEASE.jar
 org.eclipse.jst.jee.server\:Day03FNLab06=C\:\\springsource\\vfabric-tc-server-developer-2.8.2.RELEASE\\base-instance\\wtpwebapps\\Day03FNLab06
 org.eclipse.jst.jee.server\:Day03FNLab05=C\:\\springsource\\vfabric-tc-server-developer-2.8.2.RELEASE\\base-instance\\wtpwebapps\\Day03FNLab05
 org.eclipse.jst.jee.server\:Day02FNWeb=C\:\\springsource\\vfabric-tc-server-developer-2.8.2.RELEASE\\base-instance\\wtpwebapps\\Day02FNWeb
+org.eclipse.jst.jee.server\:/binary\:C\:\\cygwin\\home\\paikens\\src\\spring-training\\workspace\\SecurityApp\\WebContent\\WEB-INF\\lib\\spring-web-3.2.2.RELEASE.jar=C\:\\springsource\\vfabric-tc-server-developer-2.8.2.RELEASE\\base-instance\\wtpwebapps\\SecurityApp\\WEB-INF\\lib\\spring-web-3.2.2.RELEASE.jar
 org.eclipse.jst.jee.server\:/binary\:C\:\\cygwin\\home\\paikens\\src\\spring-training\\workspace\\Day03FNLab06\\WebContent\\WEB-INF\\lib\\spring-web-3.2.2.RELEASE.jar=C\:\\springsource\\vfabric-tc-server-developer-2.8.2.RELEASE\\base-instance\\wtpwebapps\\Day03FNLab06\\WEB-INF\\lib\\spring-web-3.2.2.RELEASE.jar

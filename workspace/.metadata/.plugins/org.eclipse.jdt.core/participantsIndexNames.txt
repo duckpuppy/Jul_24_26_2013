@@ -1,6 +1,8 @@
 INDEX VERSION 1.126
 C:\cygwin\home\paikens\src\spring-training\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\556177487.index
 \Day03FNLab05\src
+C:\cygwin\home\paikens\src\spring-training\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\456953524.index
+\SecurityApp\src
 C:\cygwin\home\paikens\src\spring-training\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1434328685.index
 \Day02FNWeb\src
 C:\cygwin\home\paikens\src\spring-training\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\903127599.index
