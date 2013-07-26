@@ -67,5 +67,4 @@ public class TopicDaoTest {
 		int num = topicDao.insert("Ruby", 50);
 		assertTrue(num == 1);
 	}
-
 }
