@@ -1,0 +1,6 @@
+package com.aci;
+
+public class Topic {
+	private String title;
+	private int duration;
+}

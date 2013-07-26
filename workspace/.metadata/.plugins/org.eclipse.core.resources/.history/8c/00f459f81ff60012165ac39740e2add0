@@ -1,0 +1,10 @@
+package com.aci;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
+
+public class TopicClient {
+	ApplicationContext context = new FileSystemXmlApplicationContext("WebContent/applicationContext.xml");
+	
+	TopicsDao topicdao = context.getBean("topicDao", TopicsDao.class);
+}

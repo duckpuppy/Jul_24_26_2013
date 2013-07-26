@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Day03FNLab06/WebContent/WEB-INF/topics.xml&apos; to &apos;topics-servlet.xml&apos;" description="Rename resource &apos;topics.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/WEB-INF/topics.xml" name="topics-servlet.xml" stamp="1374861699061" updateReferences="true"/>
+</session>

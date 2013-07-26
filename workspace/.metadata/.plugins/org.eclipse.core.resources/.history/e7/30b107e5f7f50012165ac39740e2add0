@@ -1,0 +1,8 @@
+package com.aci;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class GuessingController {
+
+}

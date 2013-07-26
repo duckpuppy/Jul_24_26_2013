@@ -1,0 +1,16 @@
+package com.aci;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class SessionsController {
+	
+	@RequestMapping(name="/topic/add/{title}/{duration}", method=RequestMethod.GET)
+	@ResponseBody
+	public String addTopic(@PathVariable(name="title") String title, @PathVariable(name="duration") String duration) {
+		
+	}
+	
+}

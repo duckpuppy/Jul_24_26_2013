@@ -1,0 +1,3 @@
+1374847101030	Extract method 'initializeSession'
+1374847148583	Extract method 'prepareSessionForNextAttempt'
+1374848884149	Extract method 'incrementAttempts'

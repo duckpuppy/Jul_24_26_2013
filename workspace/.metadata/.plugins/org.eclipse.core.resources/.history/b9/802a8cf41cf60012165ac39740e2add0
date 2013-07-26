@@ -1,0 +1,8 @@
+package com.aci;
+
+import java.util.List;
+
+
+public interface TopicsDao {
+	List<Topic> getTopics();
+}

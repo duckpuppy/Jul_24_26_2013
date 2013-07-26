@@ -1,0 +1,31 @@
+package com.aci;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class SessionsController {
+
+	@RequestMapping(value = "/topic/add/{title}/{duration}", method = RequestMethod.GET)
+	@ResponseBody
+	public String addTopic(@PathVariable("title") String title,
+			@PathVariable("duration") String duration) {
+		return null;
+	}
+
+	@RequestMapping(value = "/topic/show/{id}", method = RequestMethod.GET)
+	@ResponseBody
+	public String addTopic(@PathVariable("id") String id) {
+		return null;
+	}
+
+	@RequestMapping(value = "/topic/add/{title}/{duration}", method = RequestMethod.GET)
+	@ResponseBody
+	public String addTopic(@PathVariable("title") String title,
+			@PathVariable("duration") String duration) {
+		return null;
+	}
+}

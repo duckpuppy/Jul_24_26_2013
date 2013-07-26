@@ -1,0 +1,25 @@
+package com.aci;
+
+import java.util.List;
+
+public class TopicsDaoImpl implements TopicsDao {
+
+	@Override
+	public List<Topic> getTopics() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void addTopic(String title, int duration) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void getTopic(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
