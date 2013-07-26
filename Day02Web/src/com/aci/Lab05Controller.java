@@ -20,9 +20,20 @@ public class Lab05Controller {
 	}
 	@RequestMapping(method=RequestMethod.POST)
 	public String play(@RequestParam("guess")String number,HttpSession session){
-		int guess = Integer.parseInt(number);
-		guessingGame.play(guess);
-		session.setAttribute("attempts","Attempts: " + guessingGame.getAttempts());
+		session.setAttribute("error","");
+		
+		int guess = -1;
+		try {
+			guess = Integer.parseInt(number);
+		} catch (NumberFormatException e) {
+			session.setAttribute("error","Invalid Input");
+			session.setAttribute("message","");
+			return "game/index";
+		}
+		finally{
+			guessingGame.play(guess);
+			session.setAttribute("attempts","Attempts: " + guessingGame.getAttempts());
+		}
 		session.setAttribute("message",guessingGame.getMessage());
 		return "game/index";
 	}
