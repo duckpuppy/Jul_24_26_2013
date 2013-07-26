@@ -4,7 +4,9 @@
 <body>
 	<h2>Welcome to the guessing game. Enter a number between 1 and 100</h2>
 	<form method="POST">
-		Enter your guess <input type="text" name="guess"><br/>
+		Enter your guess <input type="text" name="guess">
+		<h3 style="color:red">${error}</h3>
+		<br/>
 		<input type="submit" value="Guess">
 		<h2>${attempts}</h2>
 		<h2>${message}</h2>
