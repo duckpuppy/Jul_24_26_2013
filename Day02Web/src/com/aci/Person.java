@@ -9,6 +9,15 @@ public class Person {
 	private String name;
 	@Range(max=70,min=20)
 	private int age;
+
+	private Address address;
+	
+	public Address getAddress() {
+		return address;
+	}
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 	public String getName() {
 		return name;
 	}

@@ -10,6 +10,9 @@
 		Age <s:input path="age"/>
 		<s:errors path="age"></s:errors>
 		<br/>
+		Street <s:input path="city" />
+		<s:errors path="city"></s:errors>
+		<br/>
 		<input type="submit" value="Add person"/>
 	</s:form>
 	
