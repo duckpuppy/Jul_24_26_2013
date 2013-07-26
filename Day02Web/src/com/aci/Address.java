@@ -19,7 +19,7 @@ public class Address {
 	public void setState(String state) {
 		this.state = state;
 	}
-	private String street = "--ENTER--";
+	private String street;
 	private String city;
 	private String state;
 }
